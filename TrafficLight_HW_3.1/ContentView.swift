@@ -15,7 +15,7 @@ struct ContentView: View {
         case green
     }
     
-    @State private var currentLight = Lights.yellow
+    @State private var currentLight = Lights.green
     @State private var isFirstTime = true
     private let lightIsOn = 1.0
     private let lightIsOff = 0.3
@@ -25,10 +25,10 @@ struct ContentView: View {
             Color(.black)
                 .ignoresSafeArea()
             VStack {
-                ColorView(color: .red, opacity: currentLight == .green && !isFirstTime ? lightIsOn : lightIsOff)
-                ColorView(color: .yellow, opacity: currentLight == .red && !isFirstTime ? lightIsOn : lightIsOff)
+                ColorView(color: .red, opacity: currentLight == .red && !isFirstTime ? lightIsOn : lightIsOff)
+                ColorView(color: .yellow, opacity: currentLight == .yellow && !isFirstTime ? lightIsOn : lightIsOff)
                     .padding(.top)
-                ColorView(color: .green, opacity: currentLight == .yellow && !isFirstTime ? lightIsOn : lightIsOff)
+                ColorView(color: .green, opacity: currentLight == .green && !isFirstTime ? lightIsOn : lightIsOff)
                     .padding(.top)
                 Spacer()
                 Button(action: { changeLigts() } ) {
