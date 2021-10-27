@@ -36,7 +36,6 @@ struct ContentView: View {
                         .foregroundColor(Color.white)
                         .frame(width: 150.0, height: 40.0)
                         .background(.blue)
-                        .buttonBorderShape(.roundedRectangle)
                         .cornerRadius(10)
                         .overlay(RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.white, lineWidth: 2))
