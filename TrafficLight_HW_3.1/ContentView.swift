@@ -15,11 +15,11 @@ struct ContentView: View {
         case green
     }
     
-    @State var currentLight = Lights.yellow
+    @State private var currentLight = Lights.yellow
     @State private var isFirstTime = true
     private let lightIsOn = 1.0
     private let lightIsOff = 0.3
-
+    
     var body: some View {
         ZStack {
             Color(.black)
@@ -31,7 +31,7 @@ struct ContentView: View {
                 ColorView(color: .green, opacity: currentLight == .yellow && !isFirstTime ? lightIsOn : lightIsOff)
                     .padding(.top)
                 Spacer()
-               Button(action: { changeLigts() }) {
+                Button(action: { changeLigts() } ) {
                     Text(isFirstTime ? "START" : "NEXT")
                         .foregroundColor(Color.white)
                         .frame(width: 150.0, height: 40.0)
@@ -39,8 +39,7 @@ struct ContentView: View {
                         .buttonBorderShape(.roundedRectangle)
                         .cornerRadius(10)
                         .overlay(RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white, lineWidth: 2))
-
+                                    .stroke(Color.white, lineWidth: 2))
                 }
             }
         }
