@@ -31,8 +31,7 @@ struct ContentView: View {
                 ColorView(color: .green, opacity: currentLight == .yellow && !isFirstTime ? lightIsOn : lightIsOff)
                     .padding(.top)
                 Spacer()
-//                ButtonView()
-                Button(action: { changeLigts() }) {
+               Button(action: { changeLigts() }) {
                     Text(isFirstTime ? "START" : "NEXT")
                         .foregroundColor(Color.white)
                         .frame(width: 150.0, height: 40.0)
@@ -47,7 +46,7 @@ struct ContentView: View {
         }
     }
     
-    func changeLigts() {
+    private func changeLigts() {
         if isFirstTime {
             isFirstTime = false
         }

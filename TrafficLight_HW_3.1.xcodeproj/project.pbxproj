@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A56BF01B2729CA65002DA59E /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BF01A2729CA65002DA59E /* ColorView.swift */; };
-		A56BF01D2729CB6C002DA59E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56BF01C2729CB6C002DA59E /* ButtonView.swift */; };
 		A56DB29F27291CF70064C8A6 /* TrafficLight_HW_3_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56DB29E27291CF70064C8A6 /* TrafficLight_HW_3_1App.swift */; };
 		A56DB2A127291CF70064C8A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56DB2A027291CF70064C8A6 /* ContentView.swift */; };
 		A56DB2A327291CFB0064C8A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56DB2A227291CFB0064C8A6 /* Assets.xcassets */; };
@@ -17,7 +16,6 @@
 
 /* Begin PBXFileReference section */
 		A56BF01A2729CA65002DA59E /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
-		A56BF01C2729CB6C002DA59E /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		A56DB29B27291CF70064C8A6 /* TrafficLight_HW_3.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLight_HW_3.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56DB29E27291CF70064C8A6 /* TrafficLight_HW_3_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight_HW_3_1App.swift; sourceTree = "<group>"; };
 		A56DB2A027291CF70064C8A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 			children = (
 				A56DB29E27291CF70064C8A6 /* TrafficLight_HW_3_1App.swift */,
 				A56DB2A027291CF70064C8A6 /* ContentView.swift */,
-				A56BF01C2729CB6C002DA59E /* ButtonView.swift */,
 				A56BF01A2729CA65002DA59E /* ColorView.swift */,
 				A56DB2A227291CFB0064C8A6 /* Assets.xcassets */,
 				A56DB2A427291CFB0064C8A6 /* Preview Content */,
@@ -146,7 +143,6 @@
 				A56BF01B2729CA65002DA59E /* ColorView.swift in Sources */,
 				A56DB2A127291CF70064C8A6 /* ContentView.swift in Sources */,
 				A56DB29F27291CF70064C8A6 /* TrafficLight_HW_3_1App.swift in Sources */,
-				A56BF01D2729CB6C002DA59E /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
